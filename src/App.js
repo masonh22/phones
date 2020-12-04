@@ -120,6 +120,7 @@ class App extends React.Component {
       },
       transportOptions,
       uri: UserAgent.makeURI('sip:' + username),
+      hackWssInTransport: true,
     };
     const userAgent = new UserAgent(userAgentOptions);
     const registerer = new Registerer(userAgent);
